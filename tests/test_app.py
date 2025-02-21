@@ -12,7 +12,7 @@ def test_health():
     tester = app.test_client()
     response = tester.get('/actuator/healthz')
     assert response.status_code == 200
-    assert b'UcP' in response.data
+    assert b'UP' in response.data
 
 
 def test_user():
