@@ -20,4 +20,3 @@ def test_user():
     response = tester.get('/user')
     assert response.status_code == 200
     assert b'tao' in response.data
- 
